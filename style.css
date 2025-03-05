@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'default';
+    src: url('./manrope.ttf');
+}
+
+:root {
+    color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'default', sans-serif;
+}
+
+body {
+    background: #121212;
+    background-image: linear-gradient(#181818 1px, transparent 1px), linear-gradient(to right, #181818 1px, #121212 1px);
+    background-size: 20px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #2f2f2f;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    input {
+        width: 20rem;
+        max-width: calc(100% - 4rem);
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        outline: none;
+        border: 1px solid #2f2f2f;
+        border-radius: 0.5rem;
+        background: #1a1a1a;
+        transition: 300ms ease;
+
+        &:hover,
+        &:focus {
+            border-color: #4158d0;
+        }
+    }
+}
+
+.no-result {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1a1a1a;
+    border-radius: 1rem;
+    width: 20rem;
+    max-width: 100%;
+    user-select: none;
+    gap: 1rem;
+    min-height: 13rem;
+
+    svg {
+        width: 3rem;
+        aspect-ratio: 1/1;
+    }
+}
+
+.info-card {
+    user-select: none;
+
+    .top:hover {
+        background: #1f1f1f;
+
+        .image {
+            background: #272727;
+        }
+    }
+}
+
+.image.emoji {
+    transition: 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: #202020;
+}
+
+.card,
+.info-card {
+    height: 100%;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+    background: #1a1a1a;
+    border-radius: 1rem;
+    width: 20rem;
+    max-width: 100%;
+    transition:
+        scale 300ms ease,
+        box-shadow 500ms ease;
+    overflow: hidden;
+
+    .top {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        transition: 300ms ease;
+
+        .image {
+            width: 3rem;
+            aspect-ratio: 1/1;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+
+        .name {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .link-type {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem;
+            user-select: none;
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
+            width: max-content;
+
+            svg {
+                width: 0.9rem;
+                line-height: 0;
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+}
+
+.card {
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+        filter: blur(20px);
+        transform: translateY(-100%);
+        transition:
+            opacity 500ms ease,
+            transform 500ms ease;
+    }
+
+    &:hover:before {
+        opacity: 0.7;
+        transform: translateY(0);
+    }
+
+    .desc {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        padding-top: 0;
+    }
+
+    .tags {
+        display: flex;
+        position: absolute;
+        bottom: 1rem;
+        padding: 0 1rem;
+        z-index: -1;
+        gap: 1rem;
+
+        & > div {
+            user-select: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.3rem;
+            border-radius: 9rem;
+            padding: 0 0.7rem;
+            font-size: 0.9rem;
+            border-style: dashed;
+            border-width: 1px;
+            background: #ffffff77;
+
+            &:nth-child(1) {
+                background: #476fff77;
+                border-color: #476fff;
+            }
+
+            &:nth-child(2) {
+                background: #cb47ff77;
+                border-color: #cb47ff;
+            }
+
+            &:nth-child(3) {
+                background: #e6ff4777;
+                border-color: #e6ff47;
+            }
+
+            svg {
+                width: 0.9rem;
+                line-height: 0;
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+}

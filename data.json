@@ -1,0 +1,107 @@
+{
+    "shop": {
+        "name": "Shop",
+        "desc": "Buy stuff made by me like wallpapers, apps, etc.",
+        "logo": "https://raw.githubusercontent.com/Axorax/portfolio-website-3/refs/heads/main/pfp.png",
+        "link": "http://patreon.com/axorax/shop",
+        "tags": ["web"]
+    },
+    "rover": {
+        "name": "Rover",
+        "desc": "Generates redirect links for a static site from a custom file format with super easy syntax.",
+        "logo": "https://github.com/Axorax/rover/raw/main/rover.svg",
+        "link": "https://github.com/Axorax/rover",
+        "tags": ["cli"]
+    },
+    "freebutworsegpt": {
+        "name": "FreeButWorseGPT",
+        "desc": "Free chatbot that supports mermaid, syntax highlighting, laTex, markdown, STT and stores data locally.",
+        "logo": "https://github.com/Axorax/freebutworsegpt/raw/main/freebutworsegpt.svg",
+        "link": "https://axorax.github.io/freebutworsegpt/",
+        "tags": ["web"]
+    },
+    "inkless": {
+        "name": "Inkless",
+        "desc": "Minimal, lightweight (less than 4 MB), shortcut-based text editor. You can use it for writing notes or coding.",
+        "logo": "https://github.com/Axorax/inkless/raw/main/src-tauri/icons/icon.png",
+        "link": "https://github.com/Axorax/inkless",
+        "tags": ["pc"]
+    },
+    "awesome-free-apps": {
+        "name": "Awesome Free Apps",
+        "desc": "Curated list of the best free apps for PC and mobile.",
+        "logo": "https://raw.githubusercontent.com/Axorax/awesome-free-apps/refs/heads/main/logo.svg",
+        "link": "https://github.com/Axorax/awesome-free-apps",
+        "tags": ["web"]
+    },
+    "loancalc": {
+        "name": "Loancalc",
+        "desc": "Minimal loan calculator.",
+        "logo": "https://github.com/Axorax/loancalc/raw/main/loancalc.svg",
+        "link": "https://axorax.github.io/loancalc/",
+        "tags": ["web"]
+    },
+    "keylock": {
+        "name": "Keylock",
+        "desc": "App to lock input from your keyboard and mouse.",
+        "logo": "https://github.com/Axorax/keylock/raw/main/assets/icon.png",
+        "link": "https://github.com/Axorax/keylock",
+        "tags": ["pc"]
+    },
+    "urlmskr": {
+        "name": "Urlmskr",
+        "desc": "Mask unlimited URLs for free. There's also an API to generate masked URLs.",
+        "logo": "https://github.com/Axorax/urlmskr/raw/main/urlmskr.svg",
+        "link": "https://axorax.github.io/urlmskr/create",
+        "tags": ["web"]
+    },
+    "tkforge": {
+        "name": "TkForge",
+        "desc": "Convert Figma design into a working Python GUI.",
+        "logo": "https://github.com/Axorax/tkforge/raw/main/assets/icon.png",
+        "link": "https://github.com/Axorax/tkforge",
+        "tags": ["pc", "cli"]
+    },
+    "kamipass": {
+        "name": "Kamipass",
+        "desc": "Secure spreadsheet like password manager with plugins.",
+        "logo": "https://github.com/Axorax/kamipass/raw/main/src-tauri/icons/icon.png",
+        "link": "https://github.com/Axorax/kamipass",
+        "tags": ["pc"]
+    },
+    "tierdesc": {
+        "name": "tierdesc",
+        "desc": "Tool made to list tier benefits in descriptions in platforms like Patreon.",
+        "logo": "https://github.com/Axorax/tierdesc/raw/main/tierdesc.svg",
+        "link": "https://github.com/Axorax/tierdesc",
+        "tags": ["cli"]
+    },
+    "winpower": {
+        "name": "Winpower",
+        "desc": "Allows you to set a custom screen off and sleep time. Also has power related settings grouped together along with a scripting system.",
+        "logo": "https://github.com/Axorax/winpower/raw/main/icon.svg",
+        "link": "https://github.com/Axorax/winpower",
+        "tags": ["pc"]
+    },
+    "nanabox": {
+        "name": "Nanabox",
+        "desc": "Upload unlimited files without login. Also has a local API, history and allows custom hosts.",
+        "logo": "https://raw.githubusercontent.com/Axorax/nanabox/refs/heads/main/static/nanabox.png",
+        "link": "https://github.com/Axorax/nanabox",
+        "tags": ["pc"]
+    },
+    "livewinsize": {
+        "name": "Livewinsize",
+        "desc": "Visualize window size in pixels and other units. Useful for developers.",
+        "logo": "https://github.com/Axorax/livewinsize/raw/main/src-tauri/icons/128x128.png",
+        "link": "https://github.com/Axorax/livewinsize",
+        "tags": ["pc"]
+    },
+    "clearmydiscordhistory": {
+        "name": "ClearMyDiscordHistory",
+        "desc": "Delete your DM or server history from Discord.",
+        "logo": "https://github.com/Axorax/clearmydiscordhistory/raw/main/assets/icon.png",
+        "link": "https://github.com/Axorax/clearmydiscordhistory",
+        "tags": ["pc"]
+    }
+}
